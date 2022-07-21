@@ -1,0 +1,2760 @@
+python3 validating_30cases.py 
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (-2.7437 54.9315 -0.0051) mm
+	Indent. depth dc = -17.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.089 ms
+	speed: 62.1543 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 0: 
+	contact location: x_c = (-2.7437, 54.9315, -0.0051)
+
+	indent. depth: d_c = -17.5000
+
+Runtime 16.0890 ms
+Speed 62.1543 Hz
+Displacement:
+
+	Error L2: 1.9107 %
+
+	Error rmse: 0.03291 
+
+	Max value : Abaqus 17.36, PODI-RBF 16.06 
+
+von Mises stress:
+
+	Error L2: 2.2901 %
+
+	Error rmse: 0.009691 
+
+	Max value : Abaqus 3.173, PODI-RBF 3.006 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (-2.7437 54.9315 -0.0051) mm
+	Indent. depth dc = -12.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.402 ms
+	speed: 60.9682 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 1: 
+	contact location: x_c = (-2.7437, 54.9315, -0.0051)
+
+	indent. depth: d_c = -12.5000
+
+Runtime 16.4020 ms
+Speed 60.9682 Hz
+Displacement:
+
+	Error L2: 2.4540 %
+
+	Error rmse: 0.02834 
+
+	Max value : Abaqus 12.37, PODI-RBF 10.93 
+
+von Mises stress:
+
+	Error L2: 2.5457 %
+
+	Error rmse: 0.00779 
+
+	Max value : Abaqus 2.117, PODI-RBF 2.008 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (-2.7437 54.9315 -0.0051) mm
+	Indent. depth dc = -7.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.968 ms
+	speed: 58.9345 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 2: 
+	contact location: x_c = (-2.7437, 54.9315, -0.0051)
+
+	indent. depth: d_c = -7.5000
+
+Runtime 16.9680 ms
+Speed 58.9345 Hz
+Displacement:
+
+	Error L2: 3.7766 %
+
+	Error rmse: 0.02351 
+
+	Max value : Abaqus 7.375, PODI-RBF 5.884 
+
+von Mises stress:
+
+	Error L2: 3.3966 %
+
+	Error rmse: 0.006 
+
+	Max value : Abaqus 1.326, PODI-RBF 1.202 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (36.3873 41.1143 -3.2523) mm
+	Indent. depth dc = -17.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 19.782 ms
+	speed: 50.551 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 3: 
+	contact location: x_c = (36.3873, 41.1143, -3.2523)
+
+	indent. depth: d_c = -17.5000
+
+Runtime 19.7820 ms
+Speed 50.5510 Hz
+Displacement:
+
+	Error L2: 1.7399 %
+
+	Error rmse: 0.03293 
+
+	Max value : Abaqus 12.98, PODI-RBF 12.07 
+
+von Mises stress:
+
+	Error L2: 2.4167 %
+
+	Error rmse: 0.01091 
+
+	Max value : Abaqus 3.323, PODI-RBF 3.167 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (36.3873 41.1143 -3.2523) mm
+	Indent. depth dc = -12.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.934 ms
+	speed: 59.0528 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 4: 
+	contact location: x_c = (36.3873, 41.1143, -3.2523)
+
+	indent. depth: d_c = -12.5000
+
+Runtime 16.9340 ms
+Speed 59.0528 Hz
+Displacement:
+
+	Error L2: 2.1194 %
+
+	Error rmse: 0.02708 
+
+	Max value : Abaqus 9.256, PODI-RBF 8.195 
+
+von Mises stress:
+
+	Error L2: 3.1663 %
+
+	Error rmse: 0.0103 
+
+	Max value : Abaqus 2.261, PODI-RBF 2.129 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (36.3873 41.1143 -3.2523) mm
+	Indent. depth dc = -7.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.04 ms
+	speed: 62.3441 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 5: 
+	contact location: x_c = (36.3873, 41.1143, -3.2523)
+
+	indent. depth: d_c = -7.5000
+
+Runtime 16.0400 ms
+Speed 62.3441 Hz
+Displacement:
+
+	Error L2: 2.7720 %
+
+	Error rmse: 0.01956 
+
+	Max value : Abaqus 5.519, PODI-RBF 4.373 
+
+von Mises stress:
+
+	Error L2: 3.1703 %
+
+	Error rmse: 0.005979 
+
+	Max value : Abaqus 1.458, PODI-RBF 1.34 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (15.8607 40.7905 33.3103) mm
+	Indent. depth dc = -17.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 18.987 ms
+	speed: 52.6676 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 6: 
+	contact location: x_c = (15.8607, 40.7905, 33.3103)
+
+	indent. depth: d_c = -17.5000
+
+Runtime 18.9870 ms
+Speed 52.6676 Hz
+Displacement:
+
+	Error L2: 1.2649 %
+
+	Error rmse: 0.02439 
+
+	Max value : Abaqus 12.57, PODI-RBF 12.19 
+
+von Mises stress:
+
+	Error L2: 2.1673 %
+
+	Error rmse: 0.009951 
+
+	Max value : Abaqus 3.401, PODI-RBF 3.27 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (15.8607 40.7905 33.3103) mm
+	Indent. depth dc = -12.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 17.228 ms
+	speed: 58.045 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 7: 
+	contact location: x_c = (15.8607, 40.7905, 33.3103)
+
+	indent. depth: d_c = -12.5000
+
+Runtime 17.2280 ms
+Speed 58.0450 Hz
+Displacement:
+
+	Error L2: 1.7059 %
+
+	Error rmse: 0.02215 
+
+	Max value : Abaqus 8.862, PODI-RBF 8.367 
+
+von Mises stress:
+
+	Error L2: 2.5510 %
+
+	Error rmse: 0.008413 
+
+	Max value : Abaqus 2.27, PODI-RBF 2.171 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (15.8607 40.7905 33.3103) mm
+	Indent. depth dc = -7.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 17.131 ms
+	speed: 58.3737 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 8: 
+	contact location: x_c = (15.8607, 40.7905, 33.3103)
+
+	indent. depth: d_c = -7.5000
+
+Runtime 17.1310 ms
+Speed 58.3737 Hz
+Displacement:
+
+	Error L2: 3.0043 %
+
+	Error rmse: 0.0211 
+
+	Max value : Abaqus 5.151, PODI-RBF 4.584 
+
+von Mises stress:
+
+	Error L2: 4.4305 %
+
+	Error rmse: 0.008395 
+
+	Max value : Abaqus 1.557, PODI-RBF 1.398 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (  9.7251  40.9166 -35.4437) mm
+	Indent. depth dc = -17.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.049 ms
+	speed: 62.3092 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 9: 
+	contact location: x_c = (9.7251, 40.9166, -35.4437)
+
+	indent. depth: d_c = -17.5000
+
+Runtime 16.0490 ms
+Speed 62.3092 Hz
+Displacement:
+
+	Error L2: 1.3771 %
+
+	Error rmse: 0.02616 
+
+	Max value : Abaqus 12.68, PODI-RBF 12.08 
+
+von Mises stress:
+
+	Error L2: 2.1715 %
+
+	Error rmse: 0.009851 
+
+	Max value : Abaqus 3.38, PODI-RBF 3.273 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (  9.7251  40.9166 -35.4437) mm
+	Indent. depth dc = -12.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 15.789 ms
+	speed: 63.3352 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 10: 
+	contact location: x_c = (9.7251, 40.9166, -35.4437)
+
+	indent. depth: d_c = -12.5000
+
+Runtime 15.7890 ms
+Speed 63.3352 Hz
+Displacement:
+
+	Error L2: 1.6730 %
+
+	Error rmse: 0.02147 
+
+	Max value : Abaqus 8.98, PODI-RBF 8.21 
+
+von Mises stress:
+
+	Error L2: 2.6113 %
+
+	Error rmse: 0.008518 
+
+	Max value : Abaqus 2.26, PODI-RBF 2.176 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (  9.7251  40.9166 -35.4437) mm
+	Indent. depth dc = -7.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.154 ms
+	speed: 61.9042 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 11: 
+	contact location: x_c = (9.7251, 40.9166, -35.4437)
+
+	indent. depth: d_c = -7.5000
+
+Runtime 16.1540 ms
+Speed 61.9042 Hz
+Displacement:
+
+	Error L2: 2.4632 %
+
+	Error rmse: 0.01727 
+
+	Max value : Abaqus 5.262, PODI-RBF 4.467 
+
+von Mises stress:
+
+	Error L2: 3.1402 %
+
+	Error rmse: 0.005884 
+
+	Max value : Abaqus 1.468, PODI-RBF 1.404 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (-25.9497  41.2262  25.5347) mm
+	Indent. depth dc = -17.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.523 ms
+	speed: 60.5217 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 12: 
+	contact location: x_c = (-25.9497, 41.2262, 25.5347)
+
+	indent. depth: d_c = -17.5000
+
+Runtime 16.5230 ms
+Speed 60.5217 Hz
+Displacement:
+
+	Error L2: 1.7091 %
+
+	Error rmse: 0.03344 
+
+	Max value : Abaqus 13.07, PODI-RBF 12.21 
+
+von Mises stress:
+
+	Error L2: 2.6072 %
+
+	Error rmse: 0.01227 
+
+	Max value : Abaqus 3.44, PODI-RBF 3.264 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (-25.9497  41.2262  25.5347) mm
+	Indent. depth dc = -12.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.034 ms
+	speed: 62.3675 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 13: 
+	contact location: x_c = (-25.9497, 41.2262, 25.5347)
+
+	indent. depth: d_c = -12.5000
+
+Runtime 16.0340 ms
+Speed 62.3675 Hz
+Displacement:
+
+	Error L2: 1.9068 %
+
+	Error rmse: 0.02519 
+
+	Max value : Abaqus 9.321, PODI-RBF 8.324 
+
+von Mises stress:
+
+	Error L2: 2.8514 %
+
+	Error rmse: 0.009668 
+
+	Max value : Abaqus 2.326, PODI-RBF 2.178 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (-25.9497  41.2262  25.5347) mm
+	Indent. depth dc = -7.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.586 ms
+	speed: 60.2918 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 14: 
+	contact location: x_c = (-25.9497, 41.2262, 25.5347)
+
+	indent. depth: d_c = -7.5000
+
+Runtime 16.5860 ms
+Speed 60.2918 Hz
+Displacement:
+
+	Error L2: 2.8797 %
+
+	Error rmse: 0.02105 
+
+	Max value : Abaqus 5.573, PODI-RBF 4.381 
+
+von Mises stress:
+
+	Error L2: 3.9335 %
+
+	Error rmse: 0.00772 
+
+	Max value : Abaqus 1.566, PODI-RBF 1.316 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (-25.9477  41.2216  -25.544) mm
+	Indent. depth dc = -17.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 18.559 ms
+	speed: 53.8822 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 15: 
+	contact location: x_c = (-25.9477, 41.2216, -25.5440)
+
+	indent. depth: d_c = -17.5000
+
+Runtime 18.5590 ms
+Speed 53.8822 Hz
+Displacement:
+
+	Error L2: 1.7604 %
+
+	Error rmse: 0.03435 
+
+	Max value : Abaqus 13.05, PODI-RBF 12.24 
+
+von Mises stress:
+
+	Error L2: 2.5851 %
+
+	Error rmse: 0.01212 
+
+	Max value : Abaqus 3.421, PODI-RBF 3.24 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (-25.9477  41.2216  -25.544) mm
+	Indent. depth dc = -12.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 15.96 ms
+	speed: 62.6566 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 16: 
+	contact location: x_c = (-25.9477, 41.2216, -25.5440)
+
+	indent. depth: d_c = -12.5000
+
+Runtime 15.9600 ms
+Speed 62.6566 Hz
+Displacement:
+
+	Error L2: 1.9966 %
+
+	Error rmse: 0.02628 
+
+	Max value : Abaqus 9.304, PODI-RBF 8.356 
+
+von Mises stress:
+
+	Error L2: 3.0634 %
+
+	Error rmse: 0.01034 
+
+	Max value : Abaqus 2.313, PODI-RBF 2.163 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (-25.9477  41.2216  -25.544) mm
+	Indent. depth dc = -7.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 18.718 ms
+	speed: 53.4245 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 17: 
+	contact location: x_c = (-25.9477, 41.2216, -25.5440)
+
+	indent. depth: d_c = -7.5000
+
+Runtime 18.7180 ms
+Speed 53.4245 Hz
+Displacement:
+
+	Error L2: 2.8597 %
+
+	Error rmse: 0.02081 
+
+	Max value : Abaqus 5.556, PODI-RBF 4.421 
+
+von Mises stress:
+
+	Error L2: 4.0766 %
+
+	Error rmse: 0.007981 
+
+	Max value : Abaqus 1.564, PODI-RBF 1.308 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (-35.4103  42.0845  -0.0007) mm
+	Indent. depth dc = -17.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 21.828 ms
+	speed: 45.8127 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 18: 
+	contact location: x_c = (-35.4103, 42.0845, -0.0007)
+
+	indent. depth: d_c = -17.5000
+
+Runtime 21.8280 ms
+Speed 45.8127 Hz
+Displacement:
+
+	Error L2: 1.9697 %
+
+	Error rmse: 0.03736 
+
+	Max value : Abaqus 13.14, PODI-RBF 12.38 
+
+von Mises stress:
+
+	Error L2: 2.5451 %
+
+	Error rmse: 0.01143 
+
+	Max value : Abaqus 3.313, PODI-RBF 3.188 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (-35.4103  42.0845  -0.0007) mm
+	Indent. depth dc = -12.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.255 ms
+	speed: 61.5195 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 19: 
+	contact location: x_c = (-35.4103, 42.0845, -0.0007)
+
+	indent. depth: d_c = -12.5000
+
+Runtime 16.2550 ms
+Speed 61.5195 Hz
+Displacement:
+
+	Error L2: 2.4923 %
+
+	Error rmse: 0.03162 
+
+	Max value : Abaqus 9.322, PODI-RBF 8.418 
+
+von Mises stress:
+
+	Error L2: 2.8030 %
+
+	Error rmse: 0.009059 
+
+	Max value : Abaqus 2.254, PODI-RBF 2.136 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (-35.4103  42.0845  -0.0007) mm
+	Indent. depth dc = -7.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.033 ms
+	speed: 62.3714 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 20: 
+	contact location: x_c = (-35.4103, 42.0845, -0.0007)
+
+	indent. depth: d_c = -7.5000
+
+Runtime 16.0330 ms
+Speed 62.3714 Hz
+Displacement:
+
+	Error L2: 3.3661 %
+
+	Error rmse: 0.02357 
+
+	Max value : Abaqus 5.499, PODI-RBF 4.514 
+
+von Mises stress:
+
+	Error L2: 4.7926 %
+
+	Error rmse: 0.008983 
+
+	Max value : Abaqus 1.48, PODI-RBF 1.339 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (  17.856   50.422 -12.7979) mm
+	Indent. depth dc = -17.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.868 ms
+	speed: 59.2839 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 21: 
+	contact location: x_c = (17.8560, 50.4220, -12.7979)
+
+	indent. depth: d_c = -17.5000
+
+Runtime 16.8680 ms
+Speed 59.2839 Hz
+Displacement:
+
+	Error L2: 1.4352 %
+
+	Error rmse: 0.02592 
+
+	Max value : Abaqus 15.73, PODI-RBF 14.82 
+
+von Mises stress:
+
+	Error L2: 1.7470 %
+
+	Error rmse: 0.007605 
+
+	Max value : Abaqus 3.26, PODI-RBF 3.154 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (  17.856   50.422 -12.7979) mm
+	Indent. depth dc = -12.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.454 ms
+	speed: 60.7755 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 22: 
+	contact location: x_c = (17.8560, 50.4220, -12.7979)
+
+	indent. depth: d_c = -12.5000
+
+Runtime 16.4540 ms
+Speed 60.7755 Hz
+Displacement:
+
+	Error L2: 2.0512 %
+
+	Error rmse: 0.02476 
+
+	Max value : Abaqus 11.15, PODI-RBF 10.05 
+
+von Mises stress:
+
+	Error L2: 2.0793 %
+
+	Error rmse: 0.006501 
+
+	Max value : Abaqus 2.188, PODI-RBF 2.103 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (  17.856   50.422 -12.7979) mm
+	Indent. depth dc = -7.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 15.89 ms
+	speed: 62.9327 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 23: 
+	contact location: x_c = (17.8560, 50.4220, -12.7979)
+
+	indent. depth: d_c = -7.5000
+
+Runtime 15.8900 ms
+Speed 62.9327 Hz
+Displacement:
+
+	Error L2: 3.3783 %
+
+	Error rmse: 0.02219 
+
+	Max value : Abaqus 6.563, PODI-RBF 5.42 
+
+von Mises stress:
+
+	Error L2: 3.4327 %
+
+	Error rmse: 0.006179 
+
+	Max value : Abaqus 1.361, PODI-RBF 1.241 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = ( 20.204 49.5113 12.8619) mm
+	Indent. depth dc = -17.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.427 ms
+	speed: 60.8754 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 24: 
+	contact location: x_c = (20.2040, 49.5113, 12.8619)
+
+	indent. depth: d_c = -17.5000
+
+Runtime 16.4270 ms
+Speed 60.8754 Hz
+Displacement:
+
+	Error L2: 1.4411 %
+
+	Error rmse: 0.02625 
+
+	Max value : Abaqus 15.41, PODI-RBF 14.51 
+
+von Mises stress:
+
+	Error L2: 1.8894 %
+
+	Error rmse: 0.008272 
+
+	Max value : Abaqus 3.205, PODI-RBF 3.105 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = ( 20.204 49.5113 12.8619) mm
+	Indent. depth dc = -12.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.638 ms
+	speed: 60.1034 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 25: 
+	contact location: x_c = (20.2040, 49.5113, 12.8619)
+
+	indent. depth: d_c = -12.5000
+
+Runtime 16.6380 ms
+Speed 60.1034 Hz
+Displacement:
+
+	Error L2: 1.8792 %
+
+	Error rmse: 0.02294 
+
+	Max value : Abaqus 10.91, PODI-RBF 9.881 
+
+von Mises stress:
+
+	Error L2: 2.0563 %
+
+	Error rmse: 0.006457 
+
+	Max value : Abaqus 2.149, PODI-RBF 2.072 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = ( 20.204 49.5113 12.8619) mm
+	Indent. depth dc = -7.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 17.574 ms
+	speed: 56.9022 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 26: 
+	contact location: x_c = (20.2040, 49.5113, 12.8619)
+
+	indent. depth: d_c = -7.5000
+
+Runtime 17.5740 ms
+Speed 56.9022 Hz
+Displacement:
+
+	Error L2: 3.3303 %
+
+	Error rmse: 0.02193 
+
+	Max value : Abaqus 6.403, PODI-RBF 5.263 
+
+von Mises stress:
+
+	Error L2: 3.9225 %
+
+	Error rmse: 0.007087 
+
+	Max value : Abaqus 1.415, PODI-RBF 1.231 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (-4.6512 48.1864 26.1043) mm
+	Indent. depth dc = -17.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 16.262 ms
+	speed: 61.4931 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 27: 
+	contact location: x_c = (-4.6512, 48.1864, 26.1043)
+
+	indent. depth: d_c = -17.5000
+
+Runtime 16.2620 ms
+Speed 61.4931 Hz
+Displacement:
+
+	Error L2: 1.3825 %
+
+	Error rmse: 0.02535 
+
+	Max value : Abaqus 14.9, PODI-RBF 14.12 
+
+von Mises stress:
+
+	Error L2: 1.9104 %
+
+	Error rmse: 0.008389 
+
+	Max value : Abaqus 3.18, PODI-RBF 3.099 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (-4.6512 48.1864 26.1043) mm
+	Indent. depth dc = -12.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 18.657 ms
+	speed: 53.5992 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 28: 
+	contact location: x_c = (-4.6512, 48.1864, 26.1043)
+
+	indent. depth: d_c = -12.5000
+
+Runtime 18.6570 ms
+Speed 53.5992 Hz
+Displacement:
+
+	Error L2: 1.7442 %
+
+	Error rmse: 0.02145 
+
+	Max value : Abaqus 10.52, PODI-RBF 9.612 
+
+von Mises stress:
+
+	Error L2: 1.9256 %
+
+	Error rmse: 0.006072 
+
+	Max value : Abaqus 2.134, PODI-RBF 2.071 
+
+============================================================
+   PODI-RBF PROGRAM FOR HEMISPHERE DOME PROBLEM
+
+Target: approximate the displacement and von-Mises
+stress fields of the hyperelastic dome during the
+indentation process. The indenter object is rigid.
+In the file `parameter.csv`, users can vary
+	- the contact location `x_c` (first 3 numbers)
+	- indentation depth (last numbers) `d_c` in [-20,-5] mm.
+The approximated solutions by PODI-RBF method are obtained
+in online stage and stored in `result` folder.
+            -----------------         
+For evaluation, Abaqus solutions of 30 cases are provided.
+These cases are related to 10 new contact locations and 3 new indentation depths
+1	-2.7437   54.9315   -0.0051  -17.5
+2	-2.7437   54.9315   -0.0051  -12.5
+3	-2.7437   54.9315   -0.0051   -7.5
+4	36.3873   41.1143   -3.2523  -17.5
+5	36.3873   41.1143   -3.2523  -12.5
+6	36.3873   41.1143   -3.2523   -7.5
+7	15.8607   40.7905   33.3103  -17.5
+8	15.8607   40.7905   33.3103  -12.5
+9	15.8607   40.7905   33.3103   -7.5
+10	9.7251   40.9166  -35.4437  -17.5
+11	9.7251   40.9166  -35.4437  -12.5
+12	9.7251   40.9166  -35.4437   -7.5
+13	-25.9497   41.2262   25.5347  -17.5
+14	-25.9497   41.2262   25.5347  -12.5
+15	-25.9497   41.2262   25.5347   -7.5
+16	-25.9477   41.2216  -25.5440  -17.5
+17	-25.9477   41.2216  -25.5440  -12.5
+18	-25.9477   41.2216  -25.5440   -7.5
+19	-35.4103   42.0845   -0.0007  -17.5
+20	-35.4103   42.0845   -0.0007  -12.5
+21	-35.4103   42.0845   -0.0007   -7.5
+22	17.8560   50.4220  -12.7979  -17.5
+23	17.8560   50.4220  -12.7979  -12.5
+24	17.8560   50.4220  -12.7979   -7.5
+25	20.2040   49.5113   12.8619  -17.5
+26	20.2040   49.5113   12.8619  -12.5
+27	20.2040   49.5113   12.8619   -7.5
+28	-4.6512   48.1864   26.1043  -17.5
+29	-4.6512   48.1864   26.1043  -12.5
+30	-4.6512   48.1864   26.1043   -7.5
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: Done.
+Input parameter:
+	Contact location: xc = (-4.6512 48.1864 26.1043) mm
+	Indent. depth dc = -7.5 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 20.965 ms
+	speed: 47.6985 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8324
+	Number of POD vectors for displacement: 86
+	Number of POD vectors for von-Mises: 118
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 29: 
+	contact location: x_c = (-4.6512, 48.1864, 26.1043)
+
+	indent. depth: d_c = -7.5000
+
+Runtime 20.9650 ms
+Speed 47.6985 Hz
+Displacement:
+
+	Error L2: 3.0159 %
+
+	Error rmse: 0.01997 
+
+	Max value : Abaqus 6.131, PODI-RBF 5.193 
+
+von Mises stress:
+
+	Error L2: 3.5390 %
+
+	Error rmse: 0.006397 
+
+	Max value : Abaqus 1.444, PODI-RBF 1.289 

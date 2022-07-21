@@ -1,0 +1,662 @@
+$ python3 validating_30cases.py 
+==============================================
+
+valID 8: h = 55.00, theta_x = 15.00, d_x = 2.50
+
+Runtime 2.9540 ms
+Speed 338.5240 Hz
+Displacement:
+
+	Error L2: 1.0177 %
+
+	Error rmse: 0.008732 
+
+	Max value : Abaqus 2.543, PODI-RBF 2.535 
+
+von Mises stress:
+
+	Error L2: 3.5984 %
+
+	Error rmse: 0.0002985 
+
+	Max value : Abaqus 0.03493, PODI-RBF 0.03469 
+
+==============================================
+
+valID 10: h = 55.00, theta_x = 15.00, d_x = 7.50
+
+Runtime 4.1260 ms
+Speed 242.3655 Hz
+Displacement:
+
+	Error L2: 0.6731 %
+
+	Error rmse: 0.01704 
+
+	Max value : Abaqus 7.648, PODI-RBF 7.638 
+
+von Mises stress:
+
+	Error L2: 1.7941 %
+
+	Error rmse: 0.0004483 
+
+	Max value : Abaqus 0.1037, PODI-RBF 0.1038 
+
+==============================================
+
+valID 11: h = 55.00, theta_x = 15.00, d_x = 10.00
+
+Runtime 2.7260 ms
+Speed 366.8379 Hz
+Displacement:
+
+	Error L2: 0.7623 %
+
+	Error rmse: 0.02555 
+
+	Max value : Abaqus 10.22, PODI-RBF 10.2 
+
+von Mises stress:
+
+	Error L2: 1.7528 %
+
+	Error rmse: 0.0005928 
+
+	Max value : Abaqus 0.1384, PODI-RBF 0.1384 
+
+==============================================
+
+valID 13: h = 55.00, theta_x = 15.00, d_x = 15.00
+
+Runtime 2.4370 ms
+Speed 410.3406 Hz
+Displacement:
+
+	Error L2: 0.9526 %
+
+	Error rmse: 0.04743 
+
+	Max value : Abaqus 15.37, PODI-RBF 15.33 
+
+von Mises stress:
+
+	Error L2: 1.7227 %
+
+	Error rmse: 0.0009213 
+
+	Max value : Abaqus 0.2141, PODI-RBF 0.2118 
+
+==============================================
+
+valID 22: h = 95.00, theta_x = 15.00, d_x = 2.50
+
+Runtime 2.5710 ms
+Speed 388.9537 Hz
+Displacement:
+
+	Error L2: 1.5137 %
+
+	Error rmse: 0.01396 
+
+	Max value : Abaqus 2.531, PODI-RBF 2.515 
+
+von Mises stress:
+
+	Error L2: 2.8368 %
+
+	Error rmse: 0.0002048 
+
+	Max value : Abaqus 0.02059, PODI-RBF 0.02039 
+
+==============================================
+
+valID 24: h = 95.00, theta_x = 15.00, d_x = 7.50
+
+Runtime 2.4570 ms
+Speed 407.0004 Hz
+Displacement:
+
+	Error L2: 1.1086 %
+
+	Error rmse: 0.03066 
+
+	Max value : Abaqus 7.59, PODI-RBF 7.578 
+
+von Mises stress:
+
+	Error L2: 1.6237 %
+
+	Error rmse: 0.0003486 
+
+	Max value : Abaqus 0.05917, PODI-RBF 0.05933 
+
+==============================================
+
+valID 25: h = 95.00, theta_x = 15.00, d_x = 10.00
+
+Runtime 3.6830 ms
+Speed 271.5178 Hz
+Displacement:
+
+	Error L2: 0.8684 %
+
+	Error rmse: 0.03207 
+
+	Max value : Abaqus 10.12, PODI-RBF 10.12 
+
+von Mises stress:
+
+	Error L2: 1.3011 %
+
+	Error rmse: 0.0003709 
+
+	Max value : Abaqus 0.0778, PODI-RBF 0.07797 
+
+==============================================
+
+valID 27: h = 95.00, theta_x = 15.00, d_x = 15.00
+
+Runtime 2.4210 ms
+Speed 413.0525 Hz
+Displacement:
+
+	Error L2: 0.6887 %
+
+	Error rmse: 0.03827 
+
+	Max value : Abaqus 15.19, PODI-RBF 15.2 
+
+von Mises stress:
+
+	Error L2: 1.2813 %
+
+	Error rmse: 0.0005479 
+
+	Max value : Abaqus 0.1152, PODI-RBF 0.1148 
+
+==============================================
+
+valID 37: h = 65.00, theta_x = 15.00, d_x = 5.00
+
+Runtime 3.4080 ms
+Speed 293.4272 Hz
+Displacement:
+
+	Error L2: 0.7346 %
+
+	Error rmse: 0.01283 
+
+	Max value : Abaqus 5.076, PODI-RBF 5.076 
+
+von Mises stress:
+
+	Error L2: 1.7206 %
+
+	Error rmse: 0.0002616 
+
+	Max value : Abaqus 0.04997, PODI-RBF 0.0497 
+
+==============================================
+
+valID 38: h = 65.00, theta_x = 15.00, d_x = 7.50
+
+Runtime 2.4910 ms
+Speed 401.4452 Hz
+Displacement:
+
+	Error L2: 0.6603 %
+
+	Error rmse: 0.01723 
+
+	Max value : Abaqus 7.622, PODI-RBF 7.627 
+
+von Mises stress:
+
+	Error L2: 1.3865 %
+
+	Error rmse: 0.0003168 
+
+	Max value : Abaqus 0.07344, PODI-RBF 0.07318 
+
+==============================================
+
+valID 39: h = 65.00, theta_x = 15.00, d_x = 10.00
+
+Runtime 2.7560 ms
+Speed 362.8447 Hz
+Displacement:
+
+	Error L2: 0.6140 %
+
+	Error rmse: 0.02128 
+
+	Max value : Abaqus 10.17, PODI-RBF 10.18 
+
+von Mises stress:
+
+	Error L2: 1.3935 %
+
+	Error rmse: 0.0004283 
+
+	Max value : Abaqus 0.09982, PODI-RBF 0.1001 
+
+==============================================
+
+valID 40: h = 65.00, theta_x = 15.00, d_x = 12.50
+
+Runtime 3.5790 ms
+Speed 279.4077 Hz
+Displacement:
+
+	Error L2: 0.6187 %
+
+	Error rmse: 0.02671 
+
+	Max value : Abaqus 12.73, PODI-RBF 12.75 
+
+von Mises stress:
+
+	Error L2: 1.4230 %
+
+	Error rmse: 0.0005555 
+
+	Max value : Abaqus 0.1305, PODI-RBF 0.131 
+
+==============================================
+
+valID 44: h = 62.50, theta_x = 0.00, d_x = 5.00
+
+Runtime 3.6030 ms
+Speed 277.5465 Hz
+Displacement:
+
+	Error L2: 0.8920 %
+
+	Error rmse: 0.01555 
+
+	Max value : Abaqus 5.076, PODI-RBF 5.075 
+
+von Mises stress:
+
+	Error L2: 2.4353 %
+
+	Error rmse: 0.0003727 
+
+	Max value : Abaqus 0.05062, PODI-RBF 0.05077 
+
+==============================================
+
+valID 45: h = 62.50, theta_x = 0.00, d_x = 7.50
+
+Runtime 2.7420 ms
+Speed 364.6973 Hz
+Displacement:
+
+	Error L2: 1.0731 %
+
+	Error rmse: 0.02793 
+
+	Max value : Abaqus 7.622, PODI-RBF 7.625 
+
+von Mises stress:
+
+	Error L2: 3.1790 %
+
+	Error rmse: 0.0007309 
+
+	Max value : Abaqus 0.07405, PODI-RBF 0.07469 
+
+==============================================
+
+valID 47: h = 62.50, theta_x = 0.00, d_x = 12.50
+
+Runtime 3.9550 ms
+Speed 252.8445 Hz
+Displacement:
+
+	Error L2: 0.6257 %
+
+	Error rmse: 0.0269 
+
+	Max value : Abaqus 12.74, PODI-RBF 12.74 
+
+von Mises stress:
+
+	Error L2: 2.8713 %
+
+	Error rmse: 0.001131 
+
+	Max value : Abaqus 0.1343, PODI-RBF 0.1338 
+
+==============================================
+
+valID 50: h = 62.50, theta_x = 15.00, d_x = 2.50
+
+Runtime 3.4050 ms
+Speed 293.6858 Hz
+Displacement:
+
+	Error L2: 0.9078 %
+
+	Error rmse: 0.007945 
+
+	Max value : Abaqus 2.538, PODI-RBF 2.531 
+
+von Mises stress:
+
+	Error L2: 2.7737 %
+
+	Error rmse: 0.0002134 
+
+	Max value : Abaqus 0.02714, PODI-RBF 0.02674 
+
+==============================================
+
+valID 51: h = 62.50, theta_x = 15.00, d_x = 5.00
+
+Runtime 2.6670 ms
+Speed 374.9531 Hz
+Displacement:
+
+	Error L2: 0.7472 %
+
+	Error rmse: 0.01299 
+
+	Max value : Abaqus 5.078, PODI-RBF 5.075 
+
+von Mises stress:
+
+	Error L2: 2.1415 %
+
+	Error rmse: 0.0003297 
+
+	Max value : Abaqus 0.05345, PODI-RBF 0.05278 
+
+==============================================
+
+valID 52: h = 62.50, theta_x = 15.00, d_x = 7.50
+
+Runtime 3.4940 ms
+Speed 286.2049 Hz
+Displacement:
+
+	Error L2: 0.6688 %
+
+	Error rmse: 0.01735 
+
+	Max value : Abaqus 7.626, PODI-RBF 7.626 
+
+von Mises stress:
+
+	Error L2: 1.9507 %
+
+	Error rmse: 0.0004519 
+
+	Max value : Abaqus 0.07892, PODI-RBF 0.07793 
+
+==============================================
+
+valID 53: h = 62.50, theta_x = 15.00, d_x = 10.00
+
+Runtime 2.4710 ms
+Speed 404.6945 Hz
+Displacement:
+
+	Error L2: 0.6330 %
+
+	Error rmse: 0.0218 
+
+	Max value : Abaqus 10.18, PODI-RBF 10.18 
+
+von Mises stress:
+
+	Error L2: 2.2212 %
+
+	Error rmse: 0.0006933 
+
+	Max value : Abaqus 0.1042, PODI-RBF 0.1048 
+
+==============================================
+
+valID 54: h = 62.50, theta_x = 15.00, d_x = 12.50
+
+Runtime 3.6470 ms
+Speed 274.1980 Hz
+Displacement:
+
+	Error L2: 0.6294 %
+
+	Error rmse: 0.02697 
+
+	Max value : Abaqus 12.74, PODI-RBF 12.74 
+
+von Mises stress:
+
+	Error L2: 2.6665 %
+
+	Error rmse: 0.00106 
+
+	Max value : Abaqus 0.137, PODI-RBF 0.1378 
+
+==============================================
+
+valID 55: h = 62.50, theta_x = 15.00, d_x = 15.00
+
+Runtime 4.3910 ms
+Speed 227.7386 Hz
+Displacement:
+
+	Error L2: 0.7398 %
+
+	Error rmse: 0.03787 
+
+	Max value : Abaqus 15.31, PODI-RBF 15.31 
+
+von Mises stress:
+
+	Error L2: 3.1425 %
+
+	Error rmse: 0.001539 
+
+	Max value : Abaqus 0.1728, PODI-RBF 0.1735 
+
+==============================================
+
+valID 57: h = 77.50, theta_x = 0.00, d_x = 2.50
+
+Runtime 2.5030 ms
+Speed 399.5206 Hz
+Displacement:
+
+	Error L2: 1.4189 %
+
+	Error rmse: 0.01285 
+
+	Max value : Abaqus 2.532, PODI-RBF 2.526 
+
+von Mises stress:
+
+	Error L2: 4.3502 %
+
+	Error rmse: 0.0003112 
+
+	Max value : Abaqus 0.02213, PODI-RBF 0.02237 
+
+==============================================
+
+valID 60: h = 77.50, theta_x = 0.00, d_x = 10.00
+
+Runtime 2.8830 ms
+Speed 346.8609 Hz
+Displacement:
+
+	Error L2: 0.6634 %
+
+	Error rmse: 0.02384 
+
+	Max value : Abaqus 10.14, PODI-RBF 10.14 
+
+von Mises stress:
+
+	Error L2: 2.4569 %
+
+	Error rmse: 0.000703 
+
+	Max value : Abaqus 0.08529, PODI-RBF 0.08519 
+
+==============================================
+
+valID 62: h = 77.50, theta_x = 0.00, d_x = 15.00
+
+Runtime 2.4570 ms
+Speed 407.0004 Hz
+Displacement:
+
+	Error L2: 0.9618 %
+
+	Error rmse: 0.05179 
+
+	Max value : Abaqus 15.23, PODI-RBF 15.23 
+
+von Mises stress:
+
+	Error L2: 2.2510 %
+
+	Error rmse: 0.0009826 
+
+	Max value : Abaqus 0.1272, PODI-RBF 0.1271 
+
+==============================================
+
+valID 64: h = 77.50, theta_x = 15.00, d_x = 2.50
+
+Runtime 2.6380 ms
+Speed 379.0751 Hz
+Displacement:
+
+	Error L2: 1.0040 %
+
+	Error rmse: 0.009051 
+
+	Max value : Abaqus 2.533, PODI-RBF 2.524 
+
+von Mises stress:
+
+	Error L2: 2.8662 %
+
+	Error rmse: 0.0002067 
+
+	Max value : Abaqus 0.02407, PODI-RBF 0.02392 
+
+==============================================
+
+valID 65: h = 77.50, theta_x = 15.00, d_x = 5.00
+
+Runtime 2.5030 ms
+Speed 399.5206 Hz
+Displacement:
+
+	Error L2: 0.8399 %
+
+	Error rmse: 0.0151 
+
+	Max value : Abaqus 5.065, PODI-RBF 5.059 
+
+von Mises stress:
+
+	Error L2: 2.2284 %
+
+	Error rmse: 0.000321 
+
+	Max value : Abaqus 0.04735, PODI-RBF 0.04742 
+
+==============================================
+
+valID 66: h = 77.50, theta_x = 15.00, d_x = 7.50
+
+Runtime 3.7570 ms
+Speed 266.1698 Hz
+Displacement:
+
+	Error L2: 0.7415 %
+
+	Error rmse: 0.01995 
+
+	Max value : Abaqus 7.602, PODI-RBF 7.599 
+
+von Mises stress:
+
+	Error L2: 1.8639 %
+
+	Error rmse: 0.0004019 
+
+	Max value : Abaqus 0.07048, PODI-RBF 0.07056 
+
+==============================================
+
+valID 67: h = 77.50, theta_x = 15.00, d_x = 10.00
+
+Runtime 2.6420 ms
+Speed 378.5011 Hz
+Displacement:
+
+	Error L2: 0.7001 %
+
+	Error rmse: 0.02509 
+
+	Max value : Abaqus 10.14, PODI-RBF 10.14 
+
+von Mises stress:
+
+	Error L2: 1.8082 %
+
+	Error rmse: 0.000521 
+
+	Max value : Abaqus 0.09355, PODI-RBF 0.09361 
+
+==============================================
+
+valID 68: h = 77.50, theta_x = 15.00, d_x = 12.50
+
+Runtime 2.6510 ms
+Speed 377.2161 Hz
+Displacement:
+
+	Error L2: 0.7683 %
+
+	Error rmse: 0.03438 
+
+	Max value : Abaqus 12.69, PODI-RBF 12.69 
+
+von Mises stress:
+
+	Error L2: 1.8575 %
+
+	Error rmse: 0.0006734 
+
+	Max value : Abaqus 0.1165, PODI-RBF 0.1168 
+
+==============================================
+
+valID 69: h = 77.50, theta_x = 15.00, d_x = 15.00
+
+Runtime 2.5660 ms
+Speed 389.7116 Hz
+Displacement:
+
+	Error L2: 0.9074 %
+
+	Error rmse: 0.04866 
+
+	Max value : Abaqus 15.23, PODI-RBF 15.24 
+
+von Mises stress:
+
+	Error L2: 1.9866 %
+
+	Error rmse: 0.000874 
+
+	Max value : Abaqus 0.1398, PODI-RBF 0.1397 
+
+(base)

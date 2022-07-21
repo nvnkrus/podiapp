@@ -1,0 +1,1262 @@
+python3 validating_30cases.py 
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -3.12
+Done.
+Input parameter:
+	d = -3.12 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.23 ms
+	speed: 4347.83 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 0: d = -3.1200
+
+Runtime 0.2300 ms
+Speed 4347.8261 Hz
+Displacement:
+
+	Error L2: 0.2408 %
+
+	Error rmse: 0.002677 
+
+	Max value : Abaqus 3.927, PODI-RBF 3.938 
+
+von Mises stress:
+
+	Error L2: 0.6625 %
+
+	Error rmse: 0.02875 
+
+	Max value : Abaqus 17.19, PODI-RBF 17.2 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -3.04
+Done.
+Input parameter:
+	d = -3.04 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.43 ms
+	speed: 2325.58 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 1: d = -3.0400
+
+Runtime 0.4300 ms
+Speed 2325.5814 Hz
+Displacement:
+
+	Error L2: 0.3751 %
+
+	Error rmse: 0.004038 
+
+	Max value : Abaqus 3.804, PODI-RBF 3.82 
+
+von Mises stress:
+
+	Error L2: 1.6345 %
+
+	Error rmse: 0.06854 
+
+	Max value : Abaqus 16.62, PODI-RBF 16.59 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -2.96
+Done.
+Input parameter:
+	d = -2.96 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.373 ms
+	speed: 2680.97 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 2: d = -2.9600
+
+Runtime 0.3730 ms
+Speed 2680.9651 Hz
+Displacement:
+
+	Error L2: 0.1867 %
+
+	Error rmse: 0.001949 
+
+	Max value : Abaqus 3.692, PODI-RBF 3.699 
+
+von Mises stress:
+
+	Error L2: 1.9951 %
+
+	Error rmse: 0.08083 
+
+	Max value : Abaqus 16.01, PODI-RBF 15.99 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -2.8
+Done.
+Input parameter:
+	d = -2.8 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.263 ms
+	speed: 3802.28 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 3: d = -2.8000
+
+Runtime 0.2630 ms
+Speed 3802.2814 Hz
+Displacement:
+
+	Error L2: 0.0593 %
+
+	Error rmse: 0.0005793 
+
+	Max value : Abaqus 3.461, PODI-RBF 3.459 
+
+von Mises stress:
+
+	Error L2: 1.9890 %
+
+	Error rmse: 0.07515 
+
+	Max value : Abaqus 14.94, PODI-RBF 14.86 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -2.72
+Done.
+Input parameter:
+	d = -2.72 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.249 ms
+	speed: 4016.06 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 4: d = -2.7200
+
+Runtime 0.2490 ms
+Speed 4016.0643 Hz
+Displacement:
+
+	Error L2: 0.0341 %
+
+	Error rmse: 0.0003217 
+
+	Max value : Abaqus 3.343, PODI-RBF 3.343 
+
+von Mises stress:
+
+	Error L2: 2.0987 %
+
+	Error rmse: 0.07649 
+
+	Max value : Abaqus 14.4, PODI-RBF 14.33 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -2.64
+Done.
+Input parameter:
+	d = -2.64 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.313 ms
+	speed: 3194.89 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 5: d = -2.6400
+
+Runtime 0.3130 ms
+Speed 3194.8882 Hz
+Displacement:
+
+	Error L2: 0.1503 %
+
+	Error rmse: 0.001367 
+
+	Max value : Abaqus 3.223, PODI-RBF 3.228 
+
+von Mises stress:
+
+	Error L2: 2.0681 %
+
+	Error rmse: 0.07267 
+
+	Max value : Abaqus 13.86, PODI-RBF 13.81 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -2.48
+Done.
+Input parameter:
+	d = -2.48 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.298 ms
+	speed: 3355.7 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 6: d = -2.4800
+
+Runtime 0.2980 ms
+Speed 3355.7047 Hz
+Displacement:
+
+	Error L2: 0.0800 %
+
+	Error rmse: 0.0006774 
+
+	Max value : Abaqus 3.004, PODI-RBF 3.002 
+
+von Mises stress:
+
+	Error L2: 2.6835 %
+
+	Error rmse: 0.08732 
+
+	Max value : Abaqus 12.79, PODI-RBF 12.79 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -2.4
+Done.
+Input parameter:
+	d = -2.4 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.271 ms
+	speed: 3690.04 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 7: d = -2.4000
+
+Runtime 0.2710 ms
+Speed 3690.0369 Hz
+Displacement:
+
+	Error L2: 0.0933 %
+
+	Error rmse: 0.0007602 
+
+	Max value : Abaqus 2.892, PODI-RBF 2.889 
+
+von Mises stress:
+
+	Error L2: 2.4456 %
+
+	Error rmse: 0.07649 
+
+	Max value : Abaqus 12.29, PODI-RBF 12.29 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -2.32
+Done.
+Input parameter:
+	d = -2.32 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.273 ms
+	speed: 3663 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 8: d = -2.3200
+
+Runtime 0.2730 ms
+Speed 3663.0037 Hz
+Displacement:
+
+	Error L2: 0.0608 %
+
+	Error rmse: 0.0004754 
+
+	Max value : Abaqus 2.778, PODI-RBF 2.777 
+
+von Mises stress:
+
+	Error L2: 1.7243 %
+
+	Error rmse: 0.05178 
+
+	Max value : Abaqus 11.79, PODI-RBF 11.78 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -2.16
+Done.
+Input parameter:
+	d = -2.16 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.296 ms
+	speed: 3378.38 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 9: d = -2.1600
+
+Runtime 0.2960 ms
+Speed 3378.3784 Hz
+Displacement:
+
+	Error L2: 0.1092 %
+
+	Error rmse: 0.0007862 
+
+	Max value : Abaqus 2.561, PODI-RBF 2.558 
+
+von Mises stress:
+
+	Error L2: 1.4638 %
+
+	Error rmse: 0.0404 
+
+	Max value : Abaqus 10.78, PODI-RBF 10.79 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -2.08
+Done.
+Input parameter:
+	d = -2.08 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.291 ms
+	speed: 3436.43 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 10: d = -2.0800
+
+Runtime 0.2910 ms
+Speed 3436.4261 Hz
+Displacement:
+
+	Error L2: 0.1229 %
+
+	Error rmse: 0.0008475 
+
+	Max value : Abaqus 2.453, PODI-RBF 2.45 
+
+von Mises stress:
+
+	Error L2: 1.8642 %
+
+	Error rmse: 0.04922 
+
+	Max value : Abaqus 10.31, PODI-RBF 10.3 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -2
+Done.
+Input parameter:
+	d = -2 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.317 ms
+	speed: 3154.57 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 11: d = -2.0000
+
+Runtime 0.3170 ms
+Speed 3154.5741 Hz
+Displacement:
+
+	Error L2: 0.0858 %
+
+	Error rmse: 0.0005655 
+
+	Max value : Abaqus 2.346, PODI-RBF 2.344 
+
+von Mises stress:
+
+	Error L2: 1.8993 %
+
+	Error rmse: 0.0479 
+
+	Max value : Abaqus 9.836, PODI-RBF 9.828 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -1.84
+Done.
+Input parameter:
+	d = -1.84 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.276 ms
+	speed: 3623.19 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 12: d = -1.8400
+
+Runtime 0.2760 ms
+Speed 3623.1884 Hz
+Displacement:
+
+	Error L2: 0.0753 %
+
+	Error rmse: 0.0004509 
+
+	Max value : Abaqus 2.133, PODI-RBF 2.134 
+
+von Mises stress:
+
+	Error L2: 2.9322 %
+
+	Error rmse: 0.06719 
+
+	Max value : Abaqus 8.901, PODI-RBF 8.909 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -1.76
+Done.
+Input parameter:
+	d = -1.76 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.296 ms
+	speed: 3378.38 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 13: d = -1.7600
+
+Runtime 0.2960 ms
+Speed 3378.3784 Hz
+Displacement:
+
+	Error L2: 0.0281 %
+
+	Error rmse: 0.0001604 
+
+	Max value : Abaqus 2.031, PODI-RBF 2.031 
+
+von Mises stress:
+
+	Error L2: 1.7026 %
+
+	Error rmse: 0.03707 
+
+	Max value : Abaqus 8.459, PODI-RBF 8.459 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -1.68
+Done.
+Input parameter:
+	d = -1.68 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.319 ms
+	speed: 3134.8 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 14: d = -1.6800
+
+Runtime 0.3190 ms
+Speed 3134.7962 Hz
+Displacement:
+
+	Error L2: 0.0256 %
+
+	Error rmse: 0.0001385 
+
+	Max value : Abaqus 1.929, PODI-RBF 1.928 
+
+von Mises stress:
+
+	Error L2: 1.5207 %
+
+	Error rmse: 0.0314 
+
+	Max value : Abaqus 8.02, PODI-RBF 8.016 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -1.52
+Done.
+Input parameter:
+	d = -1.52 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.248 ms
+	speed: 4032.26 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 15: d = -1.5200
+
+Runtime 0.2480 ms
+Speed 4032.2581 Hz
+Displacement:
+
+	Error L2: 0.0791 %
+
+	Error rmse: 0.0003824 
+
+	Max value : Abaqus 1.724, PODI-RBF 1.726 
+
+von Mises stress:
+
+	Error L2: 1.6658 %
+
+	Error rmse: 0.03074 
+
+	Max value : Abaqus 7.15, PODI-RBF 7.152 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -1.44
+Done.
+Input parameter:
+	d = -1.44 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.239 ms
+	speed: 4184.1 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 16: d = -1.4400
+
+Runtime 0.2390 ms
+Speed 4184.1004 Hz
+Displacement:
+
+	Error L2: 0.1185 %
+
+	Error rmse: 0.0005397 
+
+	Max value : Abaqus 1.624, PODI-RBF 1.626 
+
+von Mises stress:
+
+	Error L2: 2.8004 %
+
+	Error rmse: 0.04867 
+
+	Max value : Abaqus 6.718, PODI-RBF 6.73 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -1.36
+Done.
+Input parameter:
+	d = -1.36 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.239 ms
+	speed: 4184.1 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 17: d = -1.3600
+
+Runtime 0.2390 ms
+Speed 4184.1004 Hz
+Displacement:
+
+	Error L2: 0.0377 %
+
+	Error rmse: 0.0001615 
+
+	Max value : Abaqus 1.527, PODI-RBF 1.528 
+
+von Mises stress:
+
+	Error L2: 1.3936 %
+
+	Error rmse: 0.02273 
+
+	Max value : Abaqus 6.305, PODI-RBF 6.314 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -1.2
+Done.
+Input parameter:
+	d = -1.2 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.251 ms
+	speed: 3984.06 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 18: d = -1.2000
+
+Runtime 0.2510 ms
+Speed 3984.0637 Hz
+Displacement:
+
+	Error L2: 0.0387 %
+
+	Error rmse: 0.0001444 
+
+	Max value : Abaqus 1.333, PODI-RBF 1.333 
+
+von Mises stress:
+
+	Error L2: 1.9175 %
+
+	Error rmse: 0.02726 
+
+	Max value : Abaqus 5.488, PODI-RBF 5.5 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -1.12
+Done.
+Input parameter:
+	d = -1.12 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.272 ms
+	speed: 3676.47 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 19: d = -1.1200
+
+Runtime 0.2720 ms
+Speed 3676.4706 Hz
+Displacement:
+
+	Error L2: 0.0629 %
+
+	Error rmse: 0.0002177 
+
+	Max value : Abaqus 1.237, PODI-RBF 1.238 
+
+von Mises stress:
+
+	Error L2: 2.9517 %
+
+	Error rmse: 0.03894 
+
+	Max value : Abaqus 5.085, PODI-RBF 5.101 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -1.04
+Done.
+Input parameter:
+	d = -1.04 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.336 ms
+	speed: 2976.19 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 20: d = -1.0400
+
+Runtime 0.3360 ms
+Speed 2976.1905 Hz
+Displacement:
+
+	Error L2: 0.0892 %
+
+	Error rmse: 0.0002852 
+
+	Max value : Abaqus 1.142, PODI-RBF 1.143 
+
+von Mises stress:
+
+	Error L2: 3.8850 %
+
+	Error rmse: 0.04732 
+
+	Max value : Abaqus 4.685, PODI-RBF 4.708 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -0.88
+Done.
+Input parameter:
+	d = -0.88 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.267 ms
+	speed: 3745.32 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 21: d = -0.8800
+
+Runtime 0.2670 ms
+Speed 3745.3184 Hz
+Displacement:
+
+	Error L2: 0.0773 %
+
+	Error rmse: 0.0002069 
+
+	Max value : Abaqus 0.9568, PODI-RBF 0.9574 
+
+von Mises stress:
+
+	Error L2: 3.0166 %
+
+	Error rmse: 0.03072 
+
+	Max value : Abaqus 3.914, PODI-RBF 3.937 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -0.8
+Done.
+Input parameter:
+	d = -0.8 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.29 ms
+	speed: 3448.28 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 22: d = -0.8000
+
+Runtime 0.2900 ms
+Speed 3448.2759 Hz
+Displacement:
+
+	Error L2: 0.1132 %
+
+	Error rmse: 0.0002737 
+
+	Max value : Abaqus 0.865, PODI-RBF 0.8661 
+
+von Mises stress:
+
+	Error L2: 3.4645 %
+
+	Error rmse: 0.03189 
+
+	Max value : Abaqus 3.534, PODI-RBF 3.559 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -0.72
+Done.
+Input parameter:
+	d = -0.72 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.272 ms
+	speed: 3676.47 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 23: d = -0.7200
+
+Runtime 0.2720 ms
+Speed 3676.4706 Hz
+Displacement:
+
+	Error L2: 0.1319 %
+
+	Error rmse: 0.0002855 
+
+	Max value : Abaqus 0.7741, PODI-RBF 0.7752 
+
+von Mises stress:
+
+	Error L2: 4.0430 %
+
+	Error rmse: 0.0333 
+
+	Max value : Abaqus 3.159, PODI-RBF 3.183 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -0.56
+Done.
+Input parameter:
+	d = -0.56 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.255 ms
+	speed: 3921.57 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 24: d = -0.5600
+
+Runtime 0.2550 ms
+Speed 3921.5686 Hz
+Displacement:
+
+	Error L2: 0.4767 %
+
+	Error rmse: 0.0007935 
+
+	Max value : Abaqus 0.5957, PODI-RBF 0.5933 
+
+von Mises stress:
+
+	Error L2: 4.4860 %
+
+	Error rmse: 0.02841 
+
+	Max value : Abaqus 2.424, PODI-RBF 2.432 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -0.48
+Done.
+Input parameter:
+	d = -0.48 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.29 ms
+	speed: 3448.28 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 25: d = -0.4800
+
+Runtime 0.2900 ms
+Speed 3448.2759 Hz
+Displacement:
+
+	Error L2: 0.9386 %
+
+	Error rmse: 0.001332 
+
+	Max value : Abaqus 0.508, PODI-RBF 0.5036 
+
+von Mises stress:
+
+	Error L2: 4.7361 %
+
+	Error rmse: 0.02556 
+
+	Max value : Abaqus 2.064, PODI-RBF 2.062 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -0.4
+Done.
+Input parameter:
+	d = -0.4 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.341 ms
+	speed: 2932.55 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 26: d = -0.4000
+
+Runtime 0.3410 ms
+Speed 2932.5513 Hz
+Displacement:
+
+	Error L2: 1.0574 %
+
+	Error rmse: 0.001243 
+
+	Max value : Abaqus 0.4211, PODI-RBF 0.4169 
+
+von Mises stress:
+
+	Error L2: 5.1536 %
+
+	Error rmse: 0.02305 
+
+	Max value : Abaqus 1.709, PODI-RBF 1.706 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -0.24
+Done.
+Input parameter:
+	d = -0.24 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.356 ms
+	speed: 2808.99 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 27: d = -0.2400
+
+Runtime 0.3560 ms
+Speed 2808.9888 Hz
+Displacement:
+
+	Error L2: 3.3876 %
+
+	Error rmse: 0.002362 
+
+	Max value : Abaqus 0.2498, PODI-RBF 0.2584 
+
+von Mises stress:
+
+	Error L2: 7.0799 %
+
+	Error rmse: 0.01879 
+
+	Max value : Abaqus 1.012, PODI-RBF 1.055 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -0.16
+Done.
+Input parameter:
+	d = -0.16 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.234 ms
+	speed: 4273.5 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 28: d = -0.1600
+
+Runtime 0.2340 ms
+Speed 4273.5043 Hz
+Displacement:
+
+	Error L2: 9.4924 %
+
+	Error rmse: 0.004391 
+
+	Max value : Abaqus 0.1658, PODI-RBF 0.1816 
+
+von Mises stress:
+
+	Error L2: 11.1801 %
+
+	Error rmse: 0.01967 
+
+	Max value : Abaqus 0.6703, PODI-RBF 0.7404 
+
+======================================
+         MAIN PROGRAM STARTED         
+
+Load PODI-RBF data: Done.
+Read and check input from `parameter.csv`: -0.08
+Done.
+Input parameter:
+	d = -0.08 mm
+Estimate displacement and stress solution: Done.
+Running time of a single call:
+	time: 0.306 ms
+	speed: 3267.97 Hz
+Some information of the PODI-RBF model.
+	Total FEM nodes: 8370
+	Total training snapshot: 11
+	Number of POD vectors for displacement: 2
+	Number of POD vectors for von-Mises: 3
+
+        MAIN PROGRAM COMPLETED        
+======================================
+==============================================
+
+valID 29: d = -0.0800
+
+Runtime 0.3060 ms
+Speed 3267.9739 Hz
+Displacement:
+
+	Error L2: 18.4638 %
+
+	Error rmse: 0.004248 
+
+	Max value : Abaqus 0.08246, PODI-RBF 0.0977 
+
+von Mises stress:
+
+	Error L2: 19.3814 %
+
+	Error rmse: 0.01696 
+
+	Max value : Abaqus 0.3331, PODI-RBF 0.3979 
+
+(base)
